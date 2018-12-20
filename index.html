@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stlesheet" type="text/css" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./CSS/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
         
         <title>Quiz Board</title>
     </head>
@@ -11,46 +12,42 @@
             <p>Answer all questions by chosing the right one. </p>
             <form class="form">
                 <div id="quiz">
-                    <div class="radio">
+                    <div class="radio question1">
                         <p>1.Who is the strongest?</p>
-                            <label><input type="radio" name="optradio">A: Superman</label>
-                    </div>
-                    <div class="radio">
-                        <label><input type="radio" name="optradio">B: The Terminator</label>
-                    </div>
-                    <div class="radio checked">
-                        <label><input type="radio" name="optradio" checked >C: Waluigi</label>
-                    </div>
-
-                    <div class="radio">
-                            <p>2.What is the best site ever created??</p>
-                                <label><input type="radio" name="optradio">A: SitePoint</label>
+                        <div class="radio"> 
+                                <label><input type="radio" name="question" value="letter">A: Superman</label>
                         </div>
-                        <div class="radio">
-                            <label><input type="radio" name="optradio">B: Simple Steps Code</label>
+                        <div class="radio"> 
+                                <label><input type="radio" name="question" value="letter">B: The Terminator</label>
                         </div>
-                        <div class="radio checked">
-                            <label><input type="radio" name="optradio" checked>C: they're both the best</label>
+                        <div class="radio"> 
+                                <label><input type="radio" name="question" value="letter">C: Waluigi</label>
+                        </div>
+                        <p>2.What is the best site ever created??</p>
+                        <div class="radio"> 
+                                <label><input type="radio" name="question" value="letter">A: SitePoint</label>
+                        </div>
+                        <div class="radio"> 
+                                <label><input type="radio" name="question" value="letter">B: Simple Steps Code</label>
+                        </div>
+                        <div class="radio"> 
+                                <label><input type="radio" name="question" value="letter">C: they're both the best</label>
                         </div>
 
-                        <div class="radio">
-                                <p>3.Where is Waldo really?</p>
-                                    <label><input type="radio" name="optradio">A: Antarctica</label>
-                            </div>
-                            <div class="radio">
-                                <label><input type="radio" name="optradio">B: Exploring the Pacific Ocean</label>
-                            </div>
-                            <div class="radio ">
-                                <label><input type="radio" name="optradio">C: Sitting in a tree</label>
-                            </div>
-
-                            <div class="radio checked">
-                                <labe><input type="radio" name="optaradio" checked>D :Minding his own business.</labe>
-                            </div>
-                                    
+                        <p>3.Where is Waldo really?</p>
+                        <div class="radio"> 
+                                <label><input type="radio" name="question" value="letter">A: Antarctica</label>
+                        </div>
+                        <div class="radio"> 
+                                <label><input type="radio" name="question" value="letter">B: Exploring the Pacific Ocean</label>
+                        </div>
+                        <div class="radio"> 
+                                <label><input type="radio" name="question" value="letter">C: Minding his own business.</label>
+                        </div>
+            
                 </div>
-                <button id="submit"checked>Submit Quiz</button>
-                <div id="results"></div>
+                <button type="button" class="btn">Submit Quiz</button>
+                <div id="results" ></div>
             </form>        
         </div>
         <script src="JS/jquery-3.3.1.min.js"></script>
