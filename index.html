@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="JS/script.js"></script>
+        <link rel="stlesheet" type="text/css" href="CSS/bootstrap.min.css">
+        
         <title>Quiz Board</title>
     </head>
     <body>
         <div class="container">
-            <p>The form below contains questions with multiple choice answers as shown below:</p>
-  <form>
-      <h1>Quiz Board</h1>
-      <li>
-            <h3>How many letters are there in "JS"?</h3>
-            <input type="radio" name="question9" value="A">2<br>
-            <input type="radio" name="question9" value="B">1<br>
-            <input type="radio" name="question9" value="C">3<br>
-            <input type="radio" name="question9" value="D">4<br>
-            </li>
-            <button onclick="returnScore()">View Results</button>
-  </form>
+            <h1>Quiz Board</h1>
+            <p>Answer all questions by chosing the right one. </p>
+            <form class="form">
+                <div id="quiz">
+                    <div class="radio">
+                        <p>1.Who is the strongest?</p>
+                            <label><input type="radio" name="optradio">A: Superman</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio">B: The Terminator</label>
+                    </div>
+                    <div class="radio checked">
+                        <label><input type="radio" name="optradio" checked >C: Waluigi</label>
+                    </div>
+
+                    <div class="radio">
+                            <p>2.What is the best site ever created??</p>
+                                <label><input type="radio" name="optradio">A: SitePoint</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio">B: Simple Steps Code</label>
+                        </div>
+                        <div class="radio checked">
+                            <label><input type="radio" name="optradio" checked>C: they're both the best</label>
+                        </div>
+
+                        <div class="radio">
+                                <p>3.Where is Waldo really?</p>
+                                    <label><input type="radio" name="optradio">A: Antarctica</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio">B: Exploring the Pacific Ocean</label>
+                            </div>
+                            <div class="radio ">
+                                <label><input type="radio" name="optradio">C: Sitting in a tree</label>
+                            </div>
+
+                            <div class="radio checked">
+                                <labe><input type="radio" name="optaradio" checked>D :Minding his own business.</labe>
+                            </div>
+                                    
+                </div>
+                <button id="submit"checked>Submit Quiz</button>
+                <div id="results"></div>
+            </form>        
         </div>
+        <script src="JS/jquery-3.3.1.min.js"></script>
+        <script src="JS/script.js"></script>
     </body>
 </html>
