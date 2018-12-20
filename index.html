@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="JS/script.js"></script>
         <title>Quiz Board</title>
     </head>
     <body>
@@ -8,15 +9,14 @@
             <p>The form below contains questions with multiple choice answers as shown below:</p>
   <form>
       <h1>Quiz Board</h1>
-    <div class="radio">
-      <label><input type="radio" name="optradio" checked>Option 1</label>
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio">Option 2</label>
-    </div>
-    <div class="radio disabled">
-      <label><input type="radio" name="optradio" disabled>Option 3</label>
-    </div>
+      <li>
+            <h3>How many letters are there in "JS"?</h3>
+            <input type="radio" name="question9" value="A">2<br>
+            <input type="radio" name="question9" value="B">1<br>
+            <input type="radio" name="question9" value="C">3<br>
+            <input type="radio" name="question9" value="D">4<br>
+            </li>
+            <button onclick="returnScore()">View Results</button>
   </form>
         </div>
     </body>
