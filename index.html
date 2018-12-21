@@ -1,56 +1,89 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="./CSS/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
-        
         <title>Quiz Board</title>
+
     </head>
     <body>
         <div class="container">
+            <div id="quiz">
             <h1>Quiz Board</h1>
-            <p>Answer all questions by chosing the right one. </p>
-            <form class="form">
-                <div id="quiz">
-                    <div class="radio question1">
-                        <p>1.Who is the strongest?</p>
-                        <div class="radio"> 
-                                <label><input type="radio" name="question" value="letter">A: Superman</label>
-                        </div>
-                        <div class="radio"> 
-                                <label><input type="radio" name="question" value="letter">B: The Terminator</label>
-                        </div>
-                        <div class="radio"> 
-                                <label><input type="radio" name="question" value="letter">C: Waluigi</label>
-                        </div>
-                        <p>2.What is the best site ever created??</p>
-                        <div class="radio"> 
-                                <label><input type="radio" name="question" value="letter">A: SitePoint</label>
-                        </div>
-                        <div class="radio"> 
-                                <label><input type="radio" name="question" value="letter">B: Simple Steps Code</label>
-                        </div>
-                        <div class="radio"> 
-                                <label><input type="radio" name="question" value="letter">C: they're both the best</label>
-                        </div>
-
-                        <p>3.Where is Waldo really?</p>
-                        <div class="radio"> 
-                                <label><input type="radio" name="question" value="letter">A: Antarctica</label>
-                        </div>
-                        <div class="radio"> 
-                                <label><input type="radio" name="question" value="letter">B: Exploring the Pacific Ocean</label>
-                        </div>
-                        <div class="radio"> 
-                                <label><input type="radio" name="question" value="letter">C: Minding his own business.</label>
-                        </div>
-            
+         
+            <p>1. Inside which HTML element do we put the JavaScript?</p>
+            <div class="choice">
+                    <input id="choice_1" type="radio" name="choice" value="choice_1" />
+                    <label for="choice_1">script</script></label>
                 </div>
-                <button type="button" class="btn">Submit Quiz</button>
-                <div id="results" ></div>
-            </form>        
+                
+                <div class="choice">
+                    <input id="choice_2" type="radio" name="choice" value="choice_2" />
+                    <label for="choice_2">js</label>
+                </div>
+            
+                <div class="choice">    
+                    <input id="choice_3" type="radio" name="choice" value="choice_3" />
+                    <label for="choice_3">javascript</javascript></label>
+                </div>
+                <div id="result" class="unstyled">correct is </div>
+
+                <p>2. What is the correct JavaScript syntax to change the content of the HTML element below?</p>
+                     <p id="demo">This is a demonstration.</p>
+                <div class="choice">
+                        <input id="choice_1" type="radio" name="choice" value="choice_1" />
+                        <label for="choice_1">A. document.getElementByName("p").innerHTML = "Hello World!";</label>
+                    </div>
+                    <div class="choice">
+                        <input id="choice_2" type="radio" name="choice" value="choice_2" />
+                        <label for="choice_2">B.demo.innerHTML = "Hello World!";</label>
+                    </div>
+                    <div class="choice">    
+                        <input id="choice_3" type="radio" name="choice" value="choice_3" />
+                        <label for="choice_3">C. document.getElement("p").innerHTML = "Hello World!";</label>
+                    </div>
+                    <div class="choice">
+                            <input id="choice_1" type="radio" name="choice" value="choice_1" />
+                            <label for="choice_1">D. document.getElementById("demo").innerHTML = "Hello World!";</label>
+                        </div>
+                        <div id="result" class="unstyled">correct is </div>
+                        
+                        <p>3. Where is the correct place to insert a JavaScript?</p>
+                        <div class="choice">
+                            <input id="choice_2" type="radio" name="choice" value="choice_2" />
+                            <label for="choice_2">The body section</label>
+                        </div>
+                        <div class="choice">
+                            <input id="choice_2" type="radio" name="choice" value="choice_2" />
+                            <label for="choice_2">B Both the head section and the body section are correct</label>
+                        </div>
+                        <div class="choice">
+                            <input id="choice_2" type="radio" name="choice" value="choice_2" />
+                            <label for="choice_2"> C. The head section</label>
+                        </div>
+                        <div id="result" class="unstyled">correct is </div>
+                        
+                        <p>4. What is the correct syntax for referring to an external script called "xxx.js"?</p>
+                        <div class="choice">    
+                            <input id="choice_3" type="radio" name="choice" value="choice_3" />
+                            <label for="choice_3">A. script href="xxx.js"</label>
+                        </div>
+                        <div class="choice">    
+                            <input id="choice_3" type="radio" name="choice" value="choice_3" />
+                            <label for="choice_3">B .script name="xxx.js</label>
+                        </div>
+                        <div class="choice">    
+                            <input id="choice_3" type="radio" name="choice" value="choice_3" />
+                            <label for="choice_3">C. script src="xxx.js</label>
+                        </div>
+                        <div id="result" class="unstyled">correct is </div>
+            
+                     <button class="btn btn-basic">Submit</button>
+            </div>  
+              
         </div>
-        <script src="JS/jquery-3.3.1.min.js"></script>
-        <script src="JS/script.js"></script>
+        <script src="./JS/jquery-3.3.1.min.js"></script>
+        <script src="./JS/script.js"></script>
+
     </body>
 </html>

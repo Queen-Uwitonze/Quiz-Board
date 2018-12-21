@@ -1,24 +1,20 @@
-function buildQuiz(){
-    // we'll need a place to store the HTML output
-    const output = [];
-  
-    // for each question...
-    myQuestions.forEach(
-      (currentQuestion, questionNumber) => {
-  
-        // we'll want to store the list of answer choices
-        const answers = [];
-  
-        // and for each available answer...
-        for(letter in currentQuestion.answers){
-  
-          // ...add an HTML radio button
-          answers.push(
-            `<label>
-              <input type="radio" name="question${questionNumber}" value="${letter}">
-              ${letter} :
-              ${currentQuestion.answers[letter]}
-            </label>`
-          );
-        }
-  
+$(document).ready(function() {
+    var choices = $('.choice');
+
+    choices.on('click', function(event) {
+        var choice = $(event.target);
+        choice
+            .find('[name="choice"]')
+            .prop('checked', true)
+            .trigger('change');
+    });
+
+    var inputs = $('.choice input');
+    inputs.on('change', function(event) {
+        var input = $(event.target);
+        var choice = $(this).closest('.choice');
+
+        $('.choice.active').removeClass('active');
+        choice.addClass('active');
+    });
+});​
