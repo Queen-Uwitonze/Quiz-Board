@@ -8,24 +8,26 @@
     </head>
     <body>
         <div class="container ">
-            <form name="myform" method="post" onsubmit="return mytest()">
+            <div id="blanks">
+            <form>
             <h1>Quiz Board</h1>     
                 <div id="quiz">
+                    <p>Choose the correct answer</p>
             
-                <p class="question1">1. Inside which HTML element do we put the JavaScript?</p>
-                <div class="choice">
-                    <input id="choice_1" type="radio" name="choice1" value="A" />
-                    <label for="choice_1"> script</script></label>
+                    <p class="question1">1. Inside which HTML element do we put the JavaScript?</p>
+                        <div class="choice">
+                            <input id="choice_1" type="radio" name="choice1" value="A" />
+                    <label for="choice_1">A.script</script></label>
                 </div>
                 
                 <div class="choice">
                     <input id="choice_2" type="radio" name="choice1" value="B" />
-                    <label for="choice_2"> js</label>
+                    <label for="choice_2">B. js</label>
                 </div>
             
                 <div class="choice">    
-                    <input id="choice_3" type="radio" name="choice1" value="B" />
-                    <label for="choice_3"> javascript</javascript></label>
+                    <input id="choice_3" type="radio" name="choice1" value="C" />
+                    <label for="choice_3">C. javascript</javascript></label>
                 </div>
                 
 
@@ -36,7 +38,7 @@
                         <label for="choice_1">A.document.getElementByName("p").innerHTML = "Hello World!";</label>
                     </div>
                     <div class="choice">
-                        <input  type="radio" name="choice2" value="B" />
+                        <input  type="radio" name="choice2" value="D" />
                         <label for="choice_2">B. demo.innerHTML = "Hello World!";</label>
                     </div>
                     <div class="choice">    
@@ -44,8 +46,8 @@
                         <label for="choice_2">C. document.getElement("p").innerHTML = "Hello World!";</label>
                     </div>
                     <div class="choice">
-                            <input type="radio" name="choice2" value="D" />
-                            <label for="choice2" checked>D. document.getElementById("demo").innerHTML = "Hello World!";</label>
+                            <input type="radio" name="choice2" value="B" />
+                            <label for="choice2" >D. document.getElementById("demo").innerHTML = "Hello World!";</label>
                         </div>
                         
                         
@@ -60,29 +62,35 @@
                         </div>
                         <div class="choice">
                             <input type="radio" name="choice3" value="C" />
-                            <label for="choice_3" checked> C. The head section </label>
+                            <label for="choice_3" > C. The head section </label>
                         </div>
                         
                         
                         <p class="question4">4. What is the correct syntax for referring to an external script called "xxx.js"?</p>
                         <div class="choice">    
                             <input type="radio" name="choice4" value="A" />
-                            <label for="choice_3">A. script href="xxx.js"</label>
-                        </div>
-                        <div class="choice">    
-                            <input type="radio" name="choice4" value="B" />
-                            <label for="choice_3">B .script name="xxx.js</label>
+                            <label for="choice_4">A. script href="xxx.js"</label>
                         </div>
                         <div class="choice">    
                             <input type="radio" name="choice4" value="C" />
-                            <label for="choice_3">C. script src="xxx.js"</label>
+                            <label for="choice_4">B .script name="xxx.js</label>
+                        </div>
+                        <div class="choice">    
+                            <input type="radio" name="choice4" value="B" />
+                            <label for="choice_4">C. script src="xxx.js"</label>
                         </div>
                         
             
                      <button type="submit" class="btn btn-success">Submit</button>
+
+                    </div>
+                    <div id="story"> 
+                     
+                     <p>Your score is:</p>
+                    </div>
                 </form>
-            </div>  
-              
+    
+       
         </div>
         <script src="./JS/jquery-3.3.1.min.js"></script>
         <script src="./JS/script.js"></script>
