@@ -9,6 +9,7 @@ if(question1=="B")
 {
    marks=marks+10;
    }
+
 if(question2=="D")
 {
    marks=marks+10;
